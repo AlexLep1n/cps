@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: "TT Lakes", "sans-serif", "serif";
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.header-button {
+  background-color: #ff3e79;
+  cursor: pointer;
+}
+
+.header-button img {
+  vertical-align: middle;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 16px;
+}
+.header__left, .header__right, .header__subright {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header__right {
+  gap: 20px;
+}
+.header__subright--hidden {
+  display: none;
+}
+.header__menu, .header__repair, .header__status {
+  border: none;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.header__hr {
+  border: none;
+  border-radius: 1px;
+  width: 2px;
+  height: 32px;
+  background: #eaeaea;
+}
+.header__hr--hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
