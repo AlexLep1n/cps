@@ -38,7 +38,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 18px 0;
+    padding: 18px 16px;
   }
 
   &__left,
@@ -160,6 +160,8 @@ body {
 
   &__img {
     margin: 0 -16px;
+    background: url("../img/services/company-sm.jpg") no-repeat;
+    height: 176px;
   }
 }
 
@@ -170,4 +172,71 @@ body {
   gap: 8px;
   align-items: center;
   cursor: pointer;
+}
+
+@media (768px<=width < 1120px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+
+  .header {
+    &__nav {
+      padding: 18px 24px;
+    }
+
+    &__logo {
+      order: 1;
+    }
+
+    &__subright--hidden {
+      display: flex;
+    }
+
+    &__hr--hidden {
+      display: flex;
+    }
+  }
+
+  .main {
+    padding-top: 28px;
+  }
+
+  .services {
+    margin-bottom: 32px;
+
+    &__title {
+      margin-bottom: 28px;
+    }
+
+    &__slide-menu {
+      margin-bottom: 32px;
+    }
+
+    &__tab-content {
+      flex-direction: row;
+      gap: 48px;
+    }
+
+    &__content-box {
+      width: 100%;
+    }
+
+    &__text-box {
+      max-height: 160px;
+      width: 86%;
+    }
+
+    &__text {
+      line-height: 143%;
+    }
+
+    &__img {
+      margin: 0 -24px;
+      background: url(../img/services/company-md.jpg) no-repeat;
+      height: 208px;
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
 }

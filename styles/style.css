@@ -37,7 +37,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 18px 0;
+  padding: 18px 16px;
 }
 .header__left, .header__right, .header__subright {
   display: flex;
@@ -138,6 +138,8 @@ body {
 }
 .services__img {
   margin: 0 -16px;
+  background: url("../img/services/company-sm.jpg") no-repeat;
+  height: 176px;
 }
 
 .more {
@@ -147,4 +149,56 @@ body {
   gap: 8px;
   align-items: center;
   cursor: pointer;
+}
+
+@media (768px <= width < 1120px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+  .header__nav {
+    padding: 18px 24px;
+  }
+  .header__logo {
+    order: 1;
+  }
+  .header__subright--hidden {
+    display: flex;
+  }
+  .header__hr--hidden {
+    display: flex;
+  }
+  .main {
+    padding-top: 28px;
+  }
+  .services {
+    margin-bottom: 32px;
+  }
+  .services__title {
+    margin-bottom: 28px;
+  }
+  .services__slide-menu {
+    margin-bottom: 32px;
+  }
+  .services__tab-content {
+    flex-direction: row;
+    gap: 48px;
+  }
+  .services__content-box {
+    width: 100%;
+  }
+  .services__text-box {
+    max-height: 160px;
+    width: 86%;
+  }
+  .services__text {
+    line-height: 143%;
+  }
+  .services__img {
+    margin: 0 -24px;
+    background: url(../img/services/company-md.jpg) no-repeat;
+    height: 208px;
+    width: 100%;
+    border-radius: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */
