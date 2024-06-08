@@ -14,12 +14,13 @@ html {
 }
 
 body {
-  font-size: "TT Lakes", "sans-serif", "serif";
+  font-family: "TT Lakes", "sans-serif", "serif";
 }
 
 .container {
   margin: 0 auto;
   max-width: 320px;
+  padding: 0 16px;
 }
 
 .header-button {
@@ -37,7 +38,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 18px 16px;
+    padding: 18px 0;
   }
 
   &__left,
@@ -76,4 +77,97 @@ body {
   &__hr--hidden {
     display: none;
   }
+}
+
+.main {
+  padding-top: 24px;
+  background-color: #f8f8f8;
+
+  &__services {
+    margin-bottom: 24px;
+  }
+}
+
+.services {
+  margin-bottom: 24px;
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+    color: #1b1c21;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: -16px;
+  }
+
+  &__title::before {
+    content: " ";
+    width: 4px;
+    height: 40px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #41f6d7;
+    position: absolute;
+    left: 0;
+  }
+
+  &__slide-menu {
+    display: flex;
+    width: 1096px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+  }
+
+  &__tab {
+    border: none;
+    background: none;
+    padding: 8px 10px 8px 18px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #7e7e82;
+    cursor: pointer;
+  }
+
+  &__tab--active {
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+  }
+
+  &__tab-content,
+  &__content-box,
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__text-box {
+    max-height: 90px;
+    overflow: hidden;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.01em;
+    color: #1b1c21;
+  }
+
+  &__img {
+    margin: 0 -16px;
+  }
+}
+
+.more {
+  display: flex;
+  border: none;
+  background: none;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
 }
