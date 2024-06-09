@@ -12,7 +12,7 @@
   <header class="header">
     <nav class="header__nav container">
       <div class="header__left">
-        <button class="header-button header__menu">
+        <button class="nav-button header__menu">
           <img src="./img/header/menu.svg" alt="menu icon">
         </button>
 
@@ -23,22 +23,22 @@
       </div>
       <div class="header__right">
         <div class="header__subright header__subright--hidden">
-          <button class="header-button header__repair">
+          <button class="nav-button header__repair">
             <img src="./img/header/phone.svg" alt="phone icon">
           </button>
-          <button class="header-button header__status">
+          <button class="nav-button header__status">
             <img src="./img/header/chat.svg" alt="chat icon">
           </button>
-          <button class="header-button header__status">
+          <button class="nav-button header__status">
             <img src="./img/header/profile.svg" alt="profile icon">
           </button>
         </div>
         <hr class="header__hr header__hr--hidden">
         <div class="header__subright">
-          <button class="header-button header__repair">
+          <button class="nav-button header__repair">
             <img src="./img/header/repair.svg" alt="repair icon">
           </button>
-          <button class="header-button header__status">
+          <button class="nav-button header__status">
             <img src="./img/header/status.svg" alt="status icon">
           </button>
         </div>
@@ -48,13 +48,30 @@
 
   <main class="main">
     <section class="main__services services container">
-      <h1 class="services__title">Услуги и сервисы</h1>
+      <div class="services__header">
+        <h1 class="services__title">Услуги и сервисы</h1>
+        <div class="services__btns">
+          <div class="services__btn-box">
+            <p class="services__btn-text">Оставить заявку</p>
+            <button class="nav-button services__repair">
+              <img src="./img/header/repair.svg" alt="repair icon">
+            </button>
+          </div>
+          <div class="services__btn-box">
+            <p class="services__btn-text">Статус ремонта</p>
+            <button class="nav-button services__status">
+              <img src="./img/header/status.svg" alt="status icon">
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="services__slide-menu">
         <button class="services__tab services__tab--active">Ремонтируемые устройства</button>
         <button class="services__tab">Дополнительные услуги</button>
         <button class="services__tab">Цены на услуги</button>
         <button class="services__tab">Адреса сервисных центров</button>
         <button class="services__tab">Специальные цены</button>
+        <button class="services__tab">Отзывы</button>
       </div>
       <div class="services__tab-content">
         <div class="services__content-box">
