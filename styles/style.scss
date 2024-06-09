@@ -149,7 +149,7 @@ body {
 
   &__slide-menu {
     display: flex;
-    width: 1096px;
+    width: 100%;
     margin-bottom: 24px;
     overflow-x: auto;
   }
@@ -164,6 +164,7 @@ body {
     letter-spacing: -0.01em;
     color: #7e7e82;
     cursor: pointer;
+    min-width: fit-content;
   }
 
   &__tab--active {
