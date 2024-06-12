@@ -24,12 +24,32 @@ body {
 }
 
 .nav-button {
-  background-color: #ff3e79;
   cursor: pointer;
+  background: #ff3e79 no-repeat center;
 }
-
-.nav-button img {
-  vertical-align: middle;
+.nav-button__menu, .nav-button__repair, .nav-button__phone, .nav-button__chat, .nav-button__profile, .nav-button__status {
+  border: none;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.nav-button__menu {
+  background-image: url(../img/header/menu.svg);
+}
+.nav-button__phone {
+  background-image: url(../img/header/phone.svg);
+}
+.nav-button__repair {
+  background-image: url(../img/header/repair.svg);
+}
+.nav-button__status {
+  background-image: url(../img/header/status.svg);
+}
+.nav-button__chat {
+  background-image: url(../img/header/chat.svg);
+}
+.nav-button__profile {
+  background-image: url(../img/header/profile.svg);
 }
 
 .header__nav {
@@ -49,12 +69,6 @@ body {
 }
 .header__subright--hidden {
   display: none;
-}
-.header__menu, .header__repair, .header__status {
-  border: none;
-  border-radius: 20px;
-  width: 40px;
-  height: 40px;
 }
 .header__hr {
   border: none;
