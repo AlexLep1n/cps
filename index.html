@@ -45,28 +45,42 @@
         <h1 class="services__title">Услуги и сервисы</h1>
         <div class="services__btns">
           <div class="services__btn-box">
-            <p class="services__btn-text">Оставить заявку</p>
+            <label class="services__btn-text">Оставить заявку</label>
             <button class="nav-button services__repair">
               <img src="./img/header/repair.svg" alt="repair icon">
             </button>
           </div>
           <div class="services__btn-box">
-            <p class="services__btn-text">Статус ремонта</p>
+            <label class="services__btn-text">Статус ремонта</label>
             <button class="nav-button services__status">
               <img src="./img/header/status.svg" alt="status icon">
             </button>
           </div>
         </div>
       </div>
-      <div class="services__slide-menu">
-        <button class="services__tab services__tab--active">Ремонтируемые устройства</button>
-        <button class="services__tab">Дополнительные услуги</button>
-        <button class="services__tab">Цены на услуги</button>
-        <button class="services__tab">Адреса сервисных центров</button>
-        <button class="services__tab">Специальные цены</button>
-        <button class="services__tab">Отзывы</button>
-      </div>
-      <div class="services__tab-content">
+      <nav class="services__slide-menu">
+        <ul class="services__tabs">
+          <li>
+            <a href="#" class="services__tab services__tab--active">Ремонтируемые устройства</a>
+          </li>
+          <li>
+            <a href="#" class="services__tab">Дополнительные услуги</a>
+          </li>
+          <li>
+            <a href="#" class="services__tab">Цены на услуги</a>
+          </li>
+          <li>
+            <a href="#" class="services__tab">Адреса сервисных центров</a>
+          </li>
+          <li>
+            <a href="#" class="services__tab">Специальные цены</a>
+          </li>
+          <li>
+            <a href="#" class="services__tab">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <article class="services__tab-content">
         <div class="services__content-box">
           <div class="services__text-box">
             <p class="services__text">Мы являемся авторизованным сервисным центром по ремонту
@@ -81,8 +95,12 @@
             Читать далее
           </button>
         </div>
-        <div class="services__img"></div>
-      </div>
+        <picture class="services__pic">
+          <source srcset="./img/services/company-md.jpg" media="(min-width: 768px)">
+          <source srcset="./img/services/company-lg.jpg" media="(min-width: 1120px)">
+          <img class="services__img" src="./img/services/company-sm.jpg" alt="company image">
+        </picture>
+      </article>
     </section>
 
   </main>

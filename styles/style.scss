@@ -11,6 +11,7 @@ html {
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
@@ -171,13 +172,22 @@ body {
   }
 
   &__slide-menu {
+    margin-bottom: 24px;
+  }
+
+  &__tabs {
     display: flex;
     width: 100%;
-    margin-bottom: 24px;
     overflow-x: auto;
+    list-style: none;
+  }
+
+  &__tabs li {
+    flex-shrink: 0;
   }
 
   &__tab {
+    display: block;
     border: none;
     background: none;
     padding: 8px 10px 8px 18px;
@@ -216,11 +226,14 @@ body {
     color: #1b1c21;
   }
 
-  &__img {
-    margin: 0 -16px;
-    background: url("../img/services/company-sm.jpg") no-repeat;
+  &__pic {
     height: 176px;
+    margin: 0 -16px;
   }
+
+  // &__img {
+  //   margin: 0 -16px;
+  // }
 }
 
 .more {
@@ -297,11 +310,14 @@ body {
       line-height: 143%;
     }
 
-    &__img {
-      margin: 0 -24px 0 0;
-      background: url(../img/services/company-md.jpg) no-repeat;
-      height: 208px;
+    &__pic {
       width: 100%;
+      height: 208px;
+      margin: 0;
+    }
+
+    &__img {
+      height: 208px;
       border-radius: 6px;
     }
   }
@@ -342,11 +358,14 @@ body {
 
     &__slide-menu {
       flex-wrap: wrap;
-      margin-bottom: 16px;
+    }
+
+    &__tabs {
+      flex-wrap: wrap;
     }
 
     &__tab {
-      padding: 8px 21px 8px 21px;
+      padding: 8px 18px 8px 18px;
     }
 
     &__tab-content {
@@ -368,9 +387,13 @@ body {
       margin-top: 10px;
     }
 
+    &__pic {
+      height: 307px;
+      width: 100%;
+      margin: 0;
+    }
+
     &__img {
-      margin: 0 -32px 0 0;
-      background: url(../img/services/company-lg.jpg) no-repeat;
       height: 307px;
       width: 100%;
       border-radius: 6px;
