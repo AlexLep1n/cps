@@ -230,10 +230,6 @@ body {
     height: 176px;
     margin: 0 -16px;
   }
-
-  // &__img {
-  //   margin: 0 -16px;
-  // }
 }
 
 .more {
@@ -311,7 +307,6 @@ body {
     }
 
     &__pic {
-      width: 100%;
       height: 208px;
       margin: 0;
     }
@@ -389,13 +384,11 @@ body {
 
     &__pic {
       height: 307px;
-      width: 100%;
       margin: 0;
     }
 
     &__img {
       height: 307px;
-      width: 100%;
       border-radius: 6px;
     }
   }
