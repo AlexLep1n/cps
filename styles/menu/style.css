@@ -137,6 +137,7 @@ body {
   display: flex;
   gap: 7px;
   align-items: center;
+  list-style: none;
 }
 .menu__footer-btn {
   cursor: pointer;
