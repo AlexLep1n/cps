@@ -1,3 +1,12 @@
+.more {
+  display: flex;
+  border: none;
+  background: none;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -189,15 +198,6 @@ body {
 .services__pic {
   height: 176px;
   margin: 0 -16px;
-}
-
-.more {
-  display: flex;
-  border: none;
-  background: none;
-  gap: 8px;
-  align-items: center;
-  cursor: pointer;
 }
 
 @media (768px <= width < 1120px) {
