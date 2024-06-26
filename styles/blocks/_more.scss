@@ -1,8 +1,11 @@
 .more {
   display: flex;
-  border: none;
-  background: none;
   gap: 8px;
   align-items: center;
   cursor: pointer;
+
+  &__btn {
+    border: none;
+    background: none;
+  }
 }

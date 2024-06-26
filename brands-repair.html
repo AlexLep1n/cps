@@ -15,7 +15,7 @@
     <header class="service__header container">
       <h2 class="service__title">Ремонт техники различных брендов</h2>
     </header>
-    <div class="swiper">
+    <div class="service__swiper swiper">
       <ul class="service__list container swiper-wrapper">
         <li class="service__item swiper-slide">
           <img src="./img/service/lenovo.svg" alt="lenovo logo">
@@ -64,12 +64,15 @@
       </ul>
       <div class="swiper-pagination"></div>
     </div>
-    <button class="more">
+    <div class="more container">
       <img src="./img/services/more.svg" alt="" class="more__img">
-      Читать далее
-    </button>
+      <button class="more__btn">
+        Показать все
+      </button>
+    </div>
   </section>
   <script src="./scripts/swiper.js"></script>
+  <script src="./scripts/showBrands.js"></script>
 </body>
 
 </html>
