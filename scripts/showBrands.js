@@ -1,5 +1,5 @@
 "use strict";
-const showBtn = document.querySelector(".more__btn");
+const showBtn = document.querySelector(".show-more");
 const brandsList = document.querySelector(".service__swiper");
 const showImg = document.querySelector(".more__img");
 

@@ -1,28 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-body {
-  font-family: "TT Lakes", "sans-serif", "serif";
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
 .nav-button {
   cursor: pointer;
   background: #ff3e79 no-repeat center;
