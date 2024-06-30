@@ -1,0 +1,26 @@
+.price-btn {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  background-color: #ff3e79;
+  padding: 4px 16px 4px 12px;
+  cursor: pointer;
+}
+
+.price-btn::after {
+  content: "";
+  background: url("../../img/price/order-arrow.svg") no-repeat right;
+  display: inline-block;
+  width: 7px;
+  height: 9px;
+  padding-left: 14px;
+}

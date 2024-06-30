@@ -33,7 +33,6 @@
 .service__list {
   display: flex;
   gap: 16px;
-  position: relative;
 }
 .service__item {
   display: flex;
@@ -121,9 +120,6 @@
     height: 160px;
     margin-bottom: 24px;
     transition: height 0.3s;
-  }
-  .service__swiper--height {
-    height: 248px;
   }
   .service__list {
     flex-wrap: wrap;
@@ -311,6 +307,119 @@
   background-image: url(../img/header/profile.svg);
 }
 
+.price-btn {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  background-color: #ff3e79;
+  padding: 4px 16px 4px 12px;
+  cursor: pointer;
+}
+
+.price-btn::after {
+  content: "";
+  background: url("../../img/price/order-arrow.svg") no-repeat right;
+  display: inline-block;
+  width: 7px;
+  height: 9px;
+  padding-left: 14px;
+}
+
+.price-item {
+  background-color: #fff;
+  border: none;
+  border-radius: 6px;
+  width: 260px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+.price-item__box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.price-item__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: #7e7e82;
+  opacity: 0.72;
+}
+.price-item__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.01em;
+  color: #1b1c21;
+}
+
+.price__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7e7e82;
+  margin-bottom: 16px;
+  background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
+  padding: 16px;
+}
+.price__swiper {
+  min-width: 320px;
+  height: 115px;
+}
+.price__swiper-price {
+  height: 244px;
+  margin-bottom: 16px;
+}
+.price__list {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+.price__price-offer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  color: #1b1c21;
+  margin-bottom: 16px;
+}
+.price__price-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1b1c21;
+  background-color: #f8f8f8;
+  border: none;
+  width: 62%;
+  text-align: left;
+  cursor: pointer;
+}
+.price__price-btn::after {
+  content: "";
+  display: inline-block;
+  background: url("../../img/price/offer-arrow.svg") no-repeat 0 2px;
+  margin-left: 5px;
+  width: 8px;
+  height: 13px;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -368,6 +477,7 @@ body {
 
 .main {
   padding-top: 24px;
+  padding-bottom: 40px;
   background-color: #f8f8f8;
 }
 .main__services, .main__service-brands, .main__service-tech {
@@ -473,6 +583,25 @@ body {
 .services__pic {
   height: 176px;
   margin: 0 -16px;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding-bottom: 19px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.footer__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: #7e7e82;
+  opacity: 0.72;
 }
 
 @media (768px <= width < 1120px) {

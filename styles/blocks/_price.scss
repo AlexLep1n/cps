@@ -1,0 +1,62 @@
+@import "../blocks/price-item";
+
+.price {
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7e7e82;
+    margin-bottom: 16px;
+    background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
+    padding: 16px;
+  }
+
+  &__swiper {
+    min-width: 320px;
+    height: 115px;
+  }
+
+  &__swiper-price {
+    height: 244px;
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+    position: relative;
+  }
+
+  &__price-offer {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: #1b1c21;
+    margin-bottom: 16px;
+  }
+
+  &__price-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #1b1c21;
+    background-color: #f8f8f8;
+    border: none;
+    width: 62%;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__price-btn::after {
+    content: "";
+    display: inline-block;
+    background: url("../../img/price/offer-arrow.svg") no-repeat 0 2px;
+    margin-left: 5px;
+    width: 8px;
+    height: 13px;
+  }
+}

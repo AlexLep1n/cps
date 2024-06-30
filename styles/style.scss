@@ -2,6 +2,7 @@
 @import "./blocks/menu";
 @import "./blocks/more";
 @import "./blocks/nav-button";
+@import "./blocks/price";
 
 html {
   box-sizing: border-box;
@@ -69,6 +70,7 @@ body {
 
 .main {
   padding-top: 24px;
+  padding-bottom: 40px;
   background-color: #f8f8f8;
 
   &__services,
@@ -195,6 +197,27 @@ body {
   &__pic {
     height: 176px;
     margin: 0 -16px;
+  }
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding-bottom: 19px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    text-align: center;
+    color: #7e7e82;
+    opacity: 0.72;
   }
 }
 
