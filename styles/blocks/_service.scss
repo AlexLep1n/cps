@@ -6,12 +6,6 @@
 }
 
 .service {
-  &__header {
-    margin-bottom: 16px;
-    background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
-    padding: 16px;
-  }
-
   &__title {
     font-weight: 400;
     font-size: 16px;
@@ -19,6 +13,9 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #7e7e82;
+    margin-bottom: 16px;
+    background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
+    padding: 16px;
   }
 
   &__swiper {
@@ -105,7 +102,6 @@
     }
 
     &__swiper--height {
-      height: 248px;
     }
 
     &__list {

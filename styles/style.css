@@ -12,11 +12,6 @@
   padding: 0 16px;
 }
 
-.service__header {
-  margin-bottom: 16px;
-  background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
-  padding: 16px;
-}
 .service__title {
   font-weight: 400;
   font-size: 16px;
@@ -24,6 +19,9 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #7e7e82;
+  margin-bottom: 16px;
+  background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
+  padding: 16px;
 }
 .service__swiper {
   min-width: 320px;
@@ -95,9 +93,6 @@
     height: 160px;
     margin-bottom: 24px;
     transition: height 0.3s;
-  }
-  .service__swiper--height {
-    height: 248px;
   }
   .service__list {
     flex-wrap: wrap;
