@@ -334,6 +334,11 @@
   padding-left: 14px;
 }
 
+@media (768px <= width < 1120px) {
+  .price-btn {
+    position: unset;
+  }
+}
 .price-item {
   background-color: #fff;
   border: none;
@@ -367,6 +372,35 @@
   color: #1b1c21;
 }
 
+.price-item--subtitles-hidden {
+  display: none;
+}
+
+@media (768px <= width < 1120px) {
+  .price-item {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eaeaea;
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: 348px 74px 81px 119px;
+    align-items: center;
+    justify-content: space-between;
+    -moz-column-gap: 22px;
+         column-gap: 22px;
+  }
+  .price-item:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  .price-item--subtitles-hidden {
+    border: none;
+    background-color: #f8f8f8;
+    padding: 16px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
 .price__title {
   font-weight: 400;
   font-size: 16px;
@@ -391,6 +425,9 @@
   gap: 16px;
   position: relative;
 }
+.price__list--hidden {
+  display: none;
+}
 .price__price-offer {
   font-weight: 400;
   font-size: 14px;
@@ -398,6 +435,7 @@
   letter-spacing: 0.01em;
   color: #1b1c21;
   margin-bottom: 16px;
+  max-width: 421px;
 }
 .price__price-btn {
   font-weight: 500;
@@ -420,6 +458,21 @@
   height: 13px;
 }
 
+@media (768px <= width < 1120px) {
+  .price__swiper {
+    display: none;
+  }
+  .price__list--hidden {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 16px;
+    margin-bottom: 24px;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -623,6 +676,7 @@ body {
   }
   .main {
     padding-top: 28px;
+    padding-bottom: 47px;
   }
   .main__services {
     margin-bottom: 32px;
@@ -659,6 +713,20 @@ body {
   .services__img {
     height: 208px;
     border-radius: 6px;
+  }
+  .footer {
+    padding-bottom: 25px;
+  }
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+  .footer__text:first-child {
+    text-align: left;
+  }
+  .footer__text:last-child {
+    text-align: right;
   }
 }
 @media (width >= 1120px) {

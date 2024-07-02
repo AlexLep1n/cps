@@ -24,3 +24,9 @@
   height: 9px;
   padding-left: 14px;
 }
+
+@media (768px<=width<1120px) {
+  .price-btn {
+    position: unset;
+  }
+}

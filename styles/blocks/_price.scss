@@ -29,6 +29,10 @@
     position: relative;
   }
 
+  &__list--hidden {
+    display: none;
+  }
+
   &__price-offer {
     font-weight: 400;
     font-size: 14px;
@@ -36,6 +40,7 @@
     letter-spacing: 0.01em;
     color: #1b1c21;
     margin-bottom: 16px;
+    max-width: 421px;
   }
 
   &__price-btn {
@@ -58,5 +63,24 @@
     margin-left: 5px;
     width: 8px;
     height: 13px;
+  }
+}
+
+@media (768px<=width<1120px) {
+  .price {
+    &__swiper {
+      display: none;
+    }
+
+    &__list--hidden {
+      display: grid;
+      grid-template-rows: repeat(5, 1fr);
+      align-items: center;
+      border: none;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
   }
 }

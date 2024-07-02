@@ -247,6 +247,7 @@ body {
 
   .main {
     padding-top: 28px;
+    padding-bottom: 47px;
 
     &__services {
       margin-bottom: 32px;
@@ -294,6 +295,23 @@ body {
     &__img {
       height: 208px;
       border-radius: 6px;
+    }
+  }
+
+  .footer {
+    padding-bottom: 25px;
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+    }
+
+    &__text:first-child {
+      text-align: left;
+    }
+    &__text:last-child {
+      text-align: right;
     }
   }
 }
