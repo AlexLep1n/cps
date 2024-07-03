@@ -182,8 +182,13 @@ body {
   }
 
   &__text-box {
-    max-height: 90px;
+    height: 90px;
     overflow: hidden;
+    transition: height 0.3s;
+  }
+
+  &__text-box--height {
+    overflow: unset;
   }
 
   &__text {
@@ -279,7 +284,7 @@ body {
     }
 
     &__text-box {
-      max-height: 160px;
+      height: 160px;
       width: 86%;
     }
 
@@ -299,7 +304,7 @@ body {
   }
 
   .footer {
-    padding-bottom: 25px;
+    padding: 32px 0 25px 0;
 
     &__content {
       display: grid;
@@ -329,6 +334,7 @@ body {
   }
 
   .main {
+    padding-bottom: 50px;
     &__services {
       margin-bottom: 51px;
     }
@@ -372,7 +378,7 @@ body {
     }
 
     &__text-box {
-      max-height: 160px;
+      height: 160px;
       width: 93%;
     }
 
@@ -388,6 +394,24 @@ body {
     &__img {
       height: 307px;
       border-radius: 6px;
+    }
+  }
+
+  .footer {
+    padding: 32px 0 21px 0;
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
+    }
+
+    &__text:first-child {
+      text-align: left;
+    }
+
+    &__text:last-child {
+      text-align: right;
     }
   }
 }

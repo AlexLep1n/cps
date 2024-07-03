@@ -49,17 +49,38 @@
     grid-template-columns: 348px 74px 81px 119px;
     align-items: center;
     justify-content: space-between;
-    column-gap: 22px;
   }
 
   .price-item:last-child {
     border: none;
-    padding-bottom: 0;
   }
+
   .price-item--subtitles-hidden {
     border: none;
     background-color: #f8f8f8;
     padding: 16px;
-    column-gap: 0;
+  }
+}
+
+@media (width>=1120px) {
+  .price-item {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eaeaea;
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: 348px 74px 81px 119px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .price-item:last-child {
+    border: none;
+  }
+
+  .price-item--subtitles-hidden {
+    border: none;
+    background-color: #f8f8f8;
+    padding: 16px;
   }
 }
