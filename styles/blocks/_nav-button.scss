@@ -1,13 +1,16 @@
 .nav-button {
   cursor: pointer;
   background: #ff3e79 no-repeat center;
+  transition: opacity 0.3s ease;
 
   &__menu,
   &__repair,
   &__phone,
   &__chat,
   &__profile,
-  &__status {
+  &__status,
+  &__menu-close,
+  &__search {
     border: none;
     border-radius: 20px;
     width: 40px;
@@ -37,4 +40,17 @@
   &__profile {
     background-image: url(../img/header/profile.svg);
   }
+
+  &__menu-close {
+    background-image: url(../../img/menu/close.svg);
+    margin-right: 16px;
+  }
+
+  &__search {
+    background-image: url(../../img/menu/search.svg);
+  }
+}
+
+.nav-button:hover {
+  opacity: 0.5;
 }

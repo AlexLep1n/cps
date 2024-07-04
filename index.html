@@ -11,6 +11,66 @@
 </head>
 
 <body>
+  <div class="overlay overlay-menu overlay--hidden"></div>
+  <aside class="menu">
+    <header class="menu__header">
+      <button class="nav-button nav-button__menu-close">
+      </button>
+      <a class="menu__header-logo" href="#">
+        <img src="img/menu/logo.svg" alt="cps logo">
+      </a>
+      <button class="nav-button nav-button__search">
+      </button>
+    </header>
+    <nav class="menu__nav">
+      <ul class="menu__nav-list">
+        <li class="menu__nav-item">
+          <a href="#" class="menu__nav-link menu__nav-link--active">Ремонт техники</a>
+        </li>
+        <li>
+          <a href="#" class="menu__nav-link">Услуги и сервисы</a>
+        </li>
+        <li>
+          <a href="#" class="menu__nav-link">Корпоративным клиентам</a>
+        </li>
+        <li>
+          <a href="#" class="menu__nav-link">Продавцам техники</a>
+        </li>
+        <li>
+          <a href="#" class="menu__nav-link">Партнерам</a>
+        </li>
+        <li>
+          <a href="#" class="menu__nav-link">Производителям</a>
+        </li>
+        <li>
+          <a href="#" class="menu__nav-link">Наши сервисные центры</a>
+        </li>
+        <li>
+          <a href="#" class="menu__nav-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <footer class="menu__footer">
+      <div class="menu__footer-contacts">
+        <button class="nav-button nav-button__phone"></button>
+        <button class="nav-button nav-button__chat"></button>
+        <button class="nav-button nav-button__profile"></button>
+      </div>
+      <a class="menu__footer-link" href="mailto:mail@cps.com">mail@cps.com</a>
+      <a href="tel:+8 800 890 8900" class="menu__footer-phone">8 800 890 8900</a>
+      <ul class="menu__footer-btns">
+        <li>
+          <button class="menu__footer-btn menu__footer-btn--active">RU</button>
+        </li>
+        <li>
+          <button class="menu__footer-btn">EN</button>
+        </li>
+        <li>
+          <button class="menu__footer-btn">CH</button>
+        </li>
+      </ul>
+    </footer>
+  </aside>
   <header class="header">
     <nav class="header__nav container">
       <div class="header__left">
@@ -348,6 +408,7 @@
       <button class="price__price-btn">Получить коммерческое предложение</button>
     </section>
   </main>
+
   <footer class="footer">
     <div class="footer__content container">
       <p class="footer__text">© 2019 CPS<br>
@@ -357,10 +418,10 @@
     </div>
   </footer>
 
-
   <script src="./scripts/swiper.js"></script>
   <script src="./scripts/showRepairServices.js"></script>
   <script src="./scripts/readMore.js"></script>
+  <script src="./scripts/menuScript.js"></script>
 </body>
 
 </html>
