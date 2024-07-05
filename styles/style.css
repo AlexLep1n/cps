@@ -432,12 +432,12 @@
 
 @media (768px <= width < 1120px) {
   .menu {
-    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
-    background: #fff;
     width: 320px;
+    background: #fff;
     position: absolute;
     z-index: 60;
-    display: none;
+    transform: translate(-320px, 0);
+    transition: all 0.3s;
   }
   .menu__header {
     display: flex;
@@ -532,7 +532,8 @@
     color: #7e7e82;
   }
   .menu--show {
-    display: block;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    transform: translate(0, 0);
   }
 }
 @media (768px <= width < 1120px) {
