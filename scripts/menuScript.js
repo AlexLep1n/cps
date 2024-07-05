@@ -1,7 +1,7 @@
 "use strict";
 
 const menuOpenBtn = document.querySelector(".nav-button__menu");
-const menuOverlay = document.querySelector(".overlay-menu");
+const menuOverlay = document.querySelector(".overlay--z--50");
 const menuBlock = document.querySelector(".menu");
 const menuCloseBtn = document.querySelector(".nav-button__menu-close");
 

@@ -54,3 +54,11 @@
 .nav-button:hover {
   opacity: 0.5;
 }
+
+@media (width>=1120px) {
+  .nav-button {
+    &__menu-close {
+      display: none;
+    }
+  }
+}

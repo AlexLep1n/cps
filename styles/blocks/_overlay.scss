@@ -1,19 +1,37 @@
-@media (768px<=width<1120px) {
-  .overlay {
-    background-color: #fff;
-    opacity: 0.96;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 275%;
-    width: 100%;
-  }
-
-  .overlay-menu {
-    z-index: 50;
-  }
-
-  .overlay--hidden {
-    display: none;
-  }
+.overlay {
+  background-color: #fff;
+  opacity: 0.96;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 275%;
+  width: 100%;
 }
+
+.overlay--z--50 {
+  z-index: 50;
+}
+
+.overlay--hidden {
+  display: none;
+}
+
+// @media (768px<=width<1120px) {
+//   .overlay {
+//     background-color: #fff;
+//     opacity: 0.96;
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     height: 275%;
+//     width: 100%;
+//   }
+
+//   .overlay--z--50 {
+//     z-index: 50;
+//   }
+
+//   .overlay--hidden {
+//     display: none;
+//   }
+// }

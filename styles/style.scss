@@ -25,6 +25,13 @@ body {
   font-family: "TT Lakes", "sans-serif", "serif";
 }
 
+.page {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  // overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   min-width: 320px;
@@ -305,7 +312,7 @@ body {
   }
 
   .footer {
-    padding: 32px 0 25px 0;
+    padding: 32px 24px 25px 24px;
 
     &__content {
       display: grid;
@@ -323,6 +330,10 @@ body {
 }
 
 @media (width>=1120px) {
+  .page {
+    padding-left: 320px;
+  }
+
   .container {
     min-width: 1120px;
     padding: 0 32px;
@@ -342,6 +353,10 @@ body {
   }
 
   .services {
+    &__header {
+      padding-top: 42px;
+    }
+
     &__title {
       margin-left: -32px;
       padding-left: 30px;
@@ -399,7 +414,7 @@ body {
   }
 
   .footer {
-    padding: 32px 0 21px 0;
+    padding: 32px 32px 21px 32px;
 
     &__content {
       display: grid;
