@@ -19,7 +19,7 @@
 
     <aside class="menu">
       <header class="menu__header">
-        <button class="nav-button nav-button__menu-close">
+        <button class="nav-button nav-button__close menu__close">
         </button>
         <a class="menu__header-logo" href="#">
           <img src="img/menu/logo.svg" alt="cps logo">
@@ -76,10 +76,22 @@
         </ul>
       </footer>
     </aside>
-
-    <aside class="callback">
-
+    <aside class="modal modal-feedback">
+      <button class="nav-button nav-button__close modal__close-btn"></button>
+      <h3 class="modal__title title">Обратная связь</h3>
+      <form class="modal__form" action="#">
+        <input type="text" placeholder="Имя" required class="modal__input">
+        <input type="text" placeholder="Телефон" required class="modal__input">
+        <input type="text" placeholder="Электронная почта" required class="modal__input">
+        <textarea cols="30" rows="5" class="modal__input" placeholder="Сообщение"></textarea>
+        <p class="modal__rules">Нажимая “отправить”, вы даете согласие <span class="modal__span">на обработку
+            персональных данных</span> и
+          соглашаетесь
+          с нашей <span class="modal__span">политикой конфиденциальности</span></p>
+        <button class="modal__btn">ОТПРАВИТЬ</button>
+      </form>
     </aside>
+
 
     <header class="header">
       <nav class="header__nav container">
@@ -112,6 +124,8 @@
     </header>
 
     <section class="content">
+
+
 
       <main class="main container">
         <section class="main__services services">

@@ -3,7 +3,7 @@
 const menuOpenBtn = document.querySelector(".nav-button__menu");
 const menuOverlay = document.querySelector(".overlay--z--50");
 const menuBlock = document.querySelector(".menu");
-const menuCloseBtn = document.querySelector(".nav-button__menu-close");
+const menuCloseBtn = document.querySelector(".menu__close");
 
 // Open by menu open button
 menuOpenBtn.addEventListener("click", function () {

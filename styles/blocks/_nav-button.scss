@@ -9,7 +9,7 @@
   &__chat,
   &__profile,
   &__status,
-  &__menu-close,
+  &__close,
   &__search {
     border: none;
     border-radius: 20px;
@@ -41,7 +41,7 @@
     background-image: url(../img/header/profile.svg);
   }
 
-  &__menu-close {
+  &__close {
     background-image: url(../../img/menu/close.svg);
     margin-right: 16px;
   }
@@ -53,12 +53,4 @@
 
 .nav-button:hover {
   opacity: 0.5;
-}
-
-@media (width>=1120px) {
-  .nav-button {
-    &__menu-close {
-      display: none;
-    }
-  }
 }
