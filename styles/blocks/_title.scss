@@ -1,0 +1,36 @@
+.title {
+  color: #1b1c21;
+  padding-left: 12px;
+  position: relative;
+  margin-left: -16px;
+}
+
+.title::before {
+  content: " ";
+  width: 4px;
+  height: 40px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #41f6d7;
+  position: absolute;
+  left: 0;
+}
+
+@media (768px<=width < 1120px) {
+  .title {
+    margin-left: -24px;
+    padding-left: 20px;
+  }
+}
+
+@media (width>=1120px) {
+  .title {
+    margin-left: -32px;
+    padding-left: 30px;
+  }
+
+  .title::before {
+    width: 3px;
+    border-radius: 2px;
+  }
+}

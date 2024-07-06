@@ -193,6 +193,40 @@
     display: none;
   }
 }
+.title {
+  color: #1b1c21;
+  padding-left: 12px;
+  position: relative;
+  margin-left: -16px;
+}
+
+.title::before {
+  content: " ";
+  width: 4px;
+  height: 40px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #41f6d7;
+  position: absolute;
+  left: 0;
+}
+
+@media (768px <= width < 1120px) {
+  .title {
+    margin-left: -24px;
+    padding-left: 20px;
+  }
+}
+@media (width >= 1120px) {
+  .title {
+    margin-left: -32px;
+    padding-left: 30px;
+  }
+  .title::before {
+    width: 3px;
+    border-radius: 2px;
+  }
+}
 .price-btn {
   position: absolute;
   right: 16px;
@@ -483,6 +517,9 @@
 .menu__nav-link:hover {
   color: #7e7e82;
 }
+.menu__nav-link--active {
+  color: #7e7e82;
+}
 .menu__nav-link--active::before {
   content: "";
   position: absolute;
@@ -592,6 +629,9 @@
   .menu__nav-list {
     gap: 28px;
   }
+  .menu__nav-link--active::before {
+    left: -24px;
+  }
   .menu__footer {
     padding: 0 24px 32px 24px;
   }
@@ -605,12 +645,16 @@
   position: absolute;
   left: 0;
   top: 0;
-  height: 275%;
+  height: 100%;
   width: 100%;
 }
 
 .overlay--z--50 {
   z-index: 50;
+}
+
+.overlay--z--100 {
+  z-index: 100;
 }
 
 .overlay--hidden {
@@ -698,20 +742,6 @@ body {
   font-size: 28px;
   line-height: 143%;
   letter-spacing: -0.02em;
-  color: #1b1c21;
-  padding-left: 12px;
-  position: relative;
-  margin-left: -16px;
-}
-.services__title::before {
-  content: " ";
-  width: 4px;
-  height: 40px;
-  border: none;
-  border-radius: 0 10px 10px 0;
-  background-color: #41f6d7;
-  position: absolute;
-  left: 0;
 }
 .services__btns {
   display: none;
@@ -838,10 +868,6 @@ body {
   .services__header {
     margin-bottom: 28px;
   }
-  .services__title {
-    margin-left: -24px;
-    padding-left: 20px;
-  }
   .services__slide-menu {
     margin-bottom: 32px;
   }
@@ -902,14 +928,6 @@ body {
   }
   .services__header {
     padding-top: 42px;
-  }
-  .services__title {
-    margin-left: -32px;
-    padding-left: 30px;
-  }
-  .services__title::before {
-    width: 3px;
-    border-radius: 2px;
   }
   .services__btns {
     display: flex;

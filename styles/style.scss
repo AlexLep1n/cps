@@ -1,6 +1,7 @@
 @import "./blocks/service";
 @import "./blocks/more";
 @import "./blocks/nav-button";
+@import "./blocks/title";
 @import "./blocks/price";
 @import "./blocks/menu";
 @import "./blocks/overlay";
@@ -101,21 +102,6 @@ body {
     font-size: 28px;
     line-height: 143%;
     letter-spacing: -0.02em;
-    color: #1b1c21;
-    padding-left: 12px;
-    position: relative;
-    margin-left: -16px;
-  }
-
-  &__title::before {
-    content: " ";
-    width: 4px;
-    height: 40px;
-    border: none;
-    border-radius: 0 10px 10px 0;
-    background-color: #41f6d7;
-    position: absolute;
-    left: 0;
   }
 
   &__btns {
@@ -272,11 +258,6 @@ body {
       margin-bottom: 28px;
     }
 
-    &__title {
-      margin-left: -24px;
-      padding-left: 20px;
-    }
-
     &__slide-menu {
       margin-bottom: 32px;
     }
@@ -355,16 +336,6 @@ body {
   .services {
     &__header {
       padding-top: 42px;
-    }
-
-    &__title {
-      margin-left: -32px;
-      padding-left: 30px;
-    }
-
-    &__title::before {
-      width: 3px;
-      border-radius: 2px;
     }
 
     &__btns {

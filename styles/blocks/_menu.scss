@@ -50,6 +50,10 @@
     color: #7e7e82;
   }
 
+  &__nav-link--active {
+    color: #7e7e82;
+  }
+
   &__nav-link--active::before {
     content: "";
     position: absolute;
@@ -181,6 +185,10 @@
 
     &__nav-list {
       gap: 28px;
+    }
+
+    &__nav-link--active::before {
+      left: -24px;
     }
 
     &__footer {
