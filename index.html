@@ -76,6 +76,7 @@
         </ul>
       </footer>
     </aside>
+
     <aside class="modal modal-feedback">
       <button class="nav-button nav-button__close modal__close-btn"></button>
       <h3 class="modal__title title">Обратная связь</h3>
@@ -83,7 +84,7 @@
         <input type="text" placeholder="Имя" required class="modal__input">
         <input type="text" placeholder="Телефон" required class="modal__input">
         <input type="text" placeholder="Электронная почта" required class="modal__input">
-        <textarea cols="30" rows="5" class="modal__input" placeholder="Сообщение"></textarea>
+        <textarea cols="30" rows="5" class="modal__input" placeholder="Сообщение" required></textarea>
         <p class="modal__rules">Нажимая “отправить”, вы даете согласие <span class="modal__span">на обработку
             персональных данных</span> и
           соглашаетесь
@@ -92,6 +93,18 @@
       </form>
     </aside>
 
+    <aside class="modal modal-callback">
+      <button class="nav-button nav-button__close modal__close-btn"></button>
+      <h3 class="modal__title title">Заказать звонок</h3>
+      <form class="modal__form" action="#">
+        <input type="text" placeholder="Телефон" required class="modal__input">
+        <p class="modal__rules">Нажимая “отправить”, вы даете согласие <span class="modal__span">на обработку
+            персональных данных</span> и
+          соглашаетесь
+          с нашей <span class="modal__span">политикой конфиденциальности</span></p>
+        <button class="modal__btn">ОТПРАВИТЬ</button>
+      </form>
+    </aside>
 
     <header class="header">
       <nav class="header__nav container">
@@ -446,6 +459,7 @@
           <p class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
         </div>
       </footer>
+
     </section>
 
   </div>
@@ -454,6 +468,7 @@
   <script src="./scripts/showRepairServices.js"></script>
   <script src="./scripts/readMore.js"></script>
   <script src="./scripts/menuScript.js"></script>
+  <script src="./scripts/modalsScript.js"></script>
 </body>
 
 </html>
