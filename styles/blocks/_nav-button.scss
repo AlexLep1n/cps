@@ -1,6 +1,6 @@
 .nav-button {
   cursor: pointer;
-  background: #ff3e79 no-repeat center;
+  background: $btn-color no-repeat center;
   transition: opacity 0.3s ease;
 
   &__menu,

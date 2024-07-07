@@ -1,7 +1,7 @@
 @import "../blocks/price-btn";
 
 .price-item {
-  background-color: #fff;
+  background-color: $block-background-color;
   border: none;
   border-radius: 6px;
   width: 260px;
@@ -23,7 +23,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
-    color: #7e7e82;
+    color: $secondary-text-color;
     opacity: 0.72;
   }
 
@@ -32,7 +32,7 @@
     font-size: 14px;
     line-height: 129%;
     letter-spacing: 0.01em;
-    color: #1b1c21;
+    color: $primary-text-color;
   }
 }
 .price-item--subtitles-hidden {
@@ -43,7 +43,7 @@
   .price-item {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid $price-item-border-color;
     padding: 16px 0;
     display: grid;
     grid-template-columns: 348px 74px 81px 119px;
@@ -57,7 +57,7 @@
 
   .price-item--subtitles-hidden {
     border: none;
-    background-color: #f8f8f8;
+    background-color: $main-background-color;
     padding: 16px;
   }
 }
@@ -66,7 +66,7 @@
   .price-item {
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid $price-item-border-color;
     padding: 16px 0;
     display: grid;
     grid-template-columns: 348px 74px 81px 119px;
@@ -80,7 +80,7 @@
 
   .price-item--subtitles-hidden {
     border: none;
-    background-color: #f8f8f8;
+    background-color: $main-background-color;
     padding: 16px;
   }
 }

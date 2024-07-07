@@ -7,9 +7,9 @@
     line-height: 150%;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    color: #7e7e82;
+    color: $secondary-text-color;
     margin-bottom: 16px;
-    background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
+    background: linear-gradient(270deg, $main-background-color 0%, $block-background-color 100%);
     padding: 16px;
   }
 
@@ -38,7 +38,7 @@
     font-size: 14px;
     line-height: 143%;
     letter-spacing: 0.01em;
-    color: #1b1c21;
+    color: $primary-text-color;
     margin-bottom: 16px;
     max-width: 421px;
   }
@@ -48,8 +48,8 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
-    color: #1b1c21;
-    background-color: #f8f8f8;
+    color: $primary-text-color;
+    background-color: $main-background-color;
     border: none;
     width: 62%;
     text-align: left;
@@ -78,7 +78,7 @@
       align-items: center;
       border: none;
       border-radius: 6px;
-      background-color: #fff;
+      background-color: $block-background-color;
       padding: 0 16px 0 16px;
       margin-bottom: 24px;
     }
@@ -97,7 +97,7 @@
       align-items: center;
       border: none;
       border-radius: 6px;
-      background-color: #fff;
+      background-color: $block-background-color;
       padding: 0 24px;
       margin-bottom: 32px;
     }

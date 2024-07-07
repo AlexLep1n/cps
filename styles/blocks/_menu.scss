@@ -2,7 +2,7 @@
 
 .menu {
   width: 320px;
-  background: #fff;
+  background: $block-background-color;
   position: absolute;
   z-index: 60;
   transform: translate(-320px, 0);
@@ -41,17 +41,17 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
-    color: #1b1c21;
+    color: $primary-text-color;
     transition: color 0.3s ease;
     display: block;
   }
 
   &__nav-link:hover {
-    color: #7e7e82;
+    color: $secondary-text-color;
   }
 
   &__nav-link--active {
-    color: #7e7e82;
+    color: $secondary-text-color;
   }
 
   &__nav-link--active::before {
@@ -82,7 +82,7 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
-    color: #1b1c21;
+    color: $primary-text-color;
     margin-bottom: 12px;
   }
 
@@ -92,7 +92,7 @@
     font-size: 24px;
     line-height: 133%;
     letter-spacing: -0.03em;
-    color: #1b1c21;
+    color: $primary-text-color;
     margin-bottom: 8px;
   }
 
@@ -106,18 +106,18 @@
   &__footer-btn {
     cursor: pointer;
     border: none;
-    background-color: #fff;
+    background-color: $block-background-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
-    color: #1b1c21;
+    color: $primary-text-color;
     transition: color 0.2s ease;
   }
 
   &__footer-btn:hover,
   &__footer-btn--active {
-    color: #7e7e82;
+    color: $secondary-text-color;
   }
 }
 

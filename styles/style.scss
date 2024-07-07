@@ -1,3 +1,4 @@
+@import "./vars/vars-color";
 @import "./blocks/service";
 @import "./blocks/more";
 @import "./blocks/nav-button";
@@ -70,7 +71,7 @@ body {
     border-radius: 1px;
     width: 2px;
     height: 32px;
-    background: #eaeaea;
+    background: $hr-color;
   }
 
   &__hr--hidden {
@@ -81,7 +82,7 @@ body {
 .main {
   padding-top: 24px;
   padding-bottom: 40px;
-  background-color: #f8f8f8;
+  background-color: $main-background-color;
 
   &__services,
   &__service-brands,
@@ -131,7 +132,7 @@ body {
     line-height: 150%;
     letter-spacing: -0.01em;
     text-align: right;
-    color: #1b1c21;
+    color: $primary-text-color;
   }
 
   &__slide-menu {
@@ -158,14 +159,15 @@ body {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
-    color: #7e7e82;
+    color: $secondary-text-color;
     cursor: pointer;
     min-width: fit-content;
   }
 
   &__tab--active {
-    border: 2px solid #b8ffec;
+    border: 2px solid $border-color-active;
     border-radius: 6px;
+    background-color: $block-background-color;
   }
 
   &__tab-content,
@@ -191,7 +193,7 @@ body {
     font-size: 14px;
     line-height: 129%;
     letter-spacing: 0.01em;
-    color: #1b1c21;
+    color: $primary-text-color;
   }
 
   &__pic {
@@ -201,7 +203,7 @@ body {
 }
 
 .footer {
-  background-color: #f8f8f8;
+  background-color: $main-background-color;
   padding-bottom: 19px;
 
   &__content {
@@ -216,7 +218,7 @@ body {
     font-size: 14px;
     line-height: 114%;
     text-align: center;
-    color: #7e7e82;
+    color: $secondary-text-color;
     opacity: 0.72;
   }
 }

@@ -8,10 +8,10 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: right;
-  color: #fff;
+  color: $block-background-color;
   border: none;
   border-radius: 16px;
-  background-color: #ff3e79;
+  background-color: $btn-color;
   padding: 4px 16px 4px 12px;
   cursor: pointer;
 }

@@ -24,7 +24,7 @@
     font-size: 24px;
     line-height: 133%;
     letter-spacing: -0.03em;
-    color: #1b1c21;
+    color: $primary-text-color;
     margin-bottom: 24px;
   }
 
@@ -59,11 +59,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
-    color: #7e7e82;
+    color: $secondary-text-color;
   }
 
   &__span {
-    color: #ff3e79;
+    color: $btn-color;
   }
 
   &__btn {
@@ -76,7 +76,7 @@
     color: #fff;
     border: none;
     border-radius: 16px;
-    background-color: #ff3e79;
+    background-color: $btn-color;
     padding: 4px 18px;
     cursor: pointer;
     align-self: flex-end;

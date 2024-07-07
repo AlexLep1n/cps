@@ -12,10 +12,11 @@
     line-height: 150%;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    color: #7e7e82;
+    color: $secondary-text-color;
     margin-bottom: 16px;
-    background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
+    background: linear-gradient(270deg, $main-background-color 0%, $block-background-color 100%);
     padding: 16px;
+    border-top: 1px solid $service-title-border-color;
   }
 
   &__swiper {
@@ -35,14 +36,14 @@
   &__item {
     display: flex;
     padding: 16px;
-    border: 1px solid #eaeaea;
+    border: 1px solid $service-item-border-color;
     border-radius: 6px;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     width: 240px;
     height: 72px;
-    background-color: #fff;
+    background-color: $block-background-color;
   }
 
   &__item--big {
@@ -55,7 +56,7 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.01em;
-    color: #1b1c21;
+    color: $primary-text-color;
     align-self: flex-start;
   }
 
@@ -71,11 +72,11 @@
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #979797;
+  background-color: $swiper-pagination-bullet-color;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #b5b6bc;
+  background-color: $swiper-pagination-bullet-active-color;
 }
 
 .more.service__more {
