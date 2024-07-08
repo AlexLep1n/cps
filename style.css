@@ -868,6 +868,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1120px) {
   .main {
+    padding-top: 42px;
     padding-bottom: 50px; }
     .main__services {
       margin-bottom: 51px; } }
@@ -988,8 +989,6 @@ button.swiper-pagination-bullet {
     border-radius: 6px; } }
 
 @media (min-width: 1120px) {
-  .services__header {
-    padding-top: 42px; }
   .services__btns {
     display: flex; }
   .services__slide-menu {
