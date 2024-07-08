@@ -78,11 +78,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
-  .container {
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
   .service {
     &__header {
       padding: 16px 24px;
@@ -113,11 +108,6 @@
 }
 
 @media (min-width: 1120px) {
-  .container {
-    margin: 0 auto;
-    padding: 0 32px;
-  }
-
   .service {
     &__header {
       padding: 16px 32px;
