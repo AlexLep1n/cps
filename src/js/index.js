@@ -36,25 +36,3 @@ import { servicesTabs, serviceActivesTab } from './servicesTabsScript'
 import { showBtns, showMoreBtnHandler } from './showRepairServices'
 
 import { windowInnerWidth, swiper } from './swiper'
-// import Swiper from 'swiper'
-// import { Pagination } from 'swiper/modules'
-// import Swiper styles
-// import 'swiper/css'
-// import 'swiper/css/pagination'
-// import 'swiper/css/bundle'
-
-// export let windowInnerWidth = window.innerWidth
-
-// if (windowInnerWidth < 768) {
-//   new Swiper('.swiper', {
-//     slidesPerView: 'auto',
-//     // If we need pagination
-//     modules: [Pagination],
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true
-//     }
-//   })
-// }
-
-// console.log('Works!')
