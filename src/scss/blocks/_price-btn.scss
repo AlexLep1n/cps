@@ -1,0 +1,37 @@
+.price-btn {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: right;
+  color: $block-background-color;
+  border: none;
+  border-radius: 16px;
+  background-color: $btn-color;
+  padding: 4px 16px 4px 12px;
+  cursor: pointer;
+}
+
+.price-btn::after {
+  content: "";
+  background: url("../img/price/order-arrow.svg") no-repeat right;
+  display: inline-block;
+  width: 7px;
+  height: 9px;
+  padding-left: 14px;
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .price-btn {
+    position: unset;
+  }
+}
+@media (min-width: 1120px) {
+  .price-btn {
+    position: unset;
+  }
+}

@@ -1,0 +1,31 @@
+.main {
+  padding-top: 24px;
+  padding-bottom: 40px;
+  background-color: $main-background-color;
+
+  &__services,
+  &__service-brands,
+  &__service-tech {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .main {
+    padding-top: 28px;
+    padding-bottom: 47px;
+
+    &__services {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .main {
+    padding-bottom: 50px;
+    &__services {
+      margin-bottom: 51px;
+    }
+  }
+}

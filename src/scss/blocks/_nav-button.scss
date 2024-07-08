@@ -1,0 +1,56 @@
+.nav-button {
+  cursor: pointer;
+  background: $btn-color no-repeat center;
+  transition: opacity 0.3s ease;
+
+  &__menu,
+  &__repair,
+  &__phone,
+  &__chat,
+  &__profile,
+  &__status,
+  &__close,
+  &__search {
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__menu {
+    background-image: url("../img/header/menu.svg");
+  }
+
+  &__phone {
+    background-image: url("../img/header/phone.svg");
+  }
+
+  &__repair {
+    background-image: url("../img/header/repair.svg");
+  }
+
+  &__status {
+    background-image: url("../img/header/status.svg");
+  }
+
+  &__chat {
+    background-image: url("../img/header/chat.svg");
+  }
+
+  &__profile {
+    background-image: url("../img/header/profile.svg");
+  }
+
+  &__close {
+    background-image: url("../img/menu/close.svg");
+    margin-right: 16px;
+  }
+
+  &__search {
+    background-image: url("../img/menu/search.svg");
+  }
+}
+
+.nav-button:hover {
+  opacity: 0.5;
+}

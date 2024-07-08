@@ -1,0 +1,41 @@
+@import "./fonts";
+// @import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "./vars/vars-color";
+@import "./blocks/nav-button";
+@import "./blocks/page";
+@import "./blocks/container";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/services";
+@import "./blocks/footer";
+@import "./blocks/service";
+@import "./blocks/more";
+@import "./blocks/title";
+@import "./blocks/price";
+@import "./blocks/menu";
+@import "./blocks/modal";
+@import "./blocks/overlay";
+@import "./blocks/price-btn";
+@import "./blocks/price-item";
+@import "./blocks/arrow-btn";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "TT Lakes", "sans-serif", "serif";
+}
